@@ -1,0 +1,46 @@
+{
+  "name": "claude-code-plugins",
+  "owner": {
+    "name": "Gopal Joshi",
+    "email": "gopal.joshi73@hotmail.com",
+    "url": "https://github.com/spjoshis"
+  },
+  "metadata": {
+    "description": "A collection of Claude plugins for code documentation, debugging, development workflows, testing, AI/ML applications, infrastructure management, performance optimization, and code quality enhancement.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "python-development",
+      "source": "./plugins/python-development",
+      "description": "A Claude plugin to assist with Python development tasks including code generation, debugging, testing, and optimization.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": [
+        "documentation",
+        "code-explanation",
+        "technical-writing",
+        "plugin",
+        "claude-code",
+        "marketplace"
+      ],
+      "category": "documentation",
+      "strict": false,
+      "skills": [
+        "./skills/async-python-patterns",
+        "./skills/python-performance-optimization",
+        "./skills/uv-package-manager"
+      ],
+      "agents": [
+        "./agents/fastapi-expert.md",
+        "./agents/python-expert.md"
+      ]
+    }
+  ]
+}
