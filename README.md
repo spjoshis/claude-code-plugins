@@ -8,11 +8,13 @@ This repository provides a modular collection of plugins to enhance Python devel
 
 ### Add market place
 Add the plugin marketplace to your Claude environment using the following command:
-`/plugin marketplace add spjoshis/claude-code-plugins`
+
+```/plugin marketplace add spjoshis/claude-code-plugins```
 
 
 ### Install plugins
 Install the plugin with the command:
+
 `/plugin install python-development@cc-plugins`
 
 ### Available Plugins
