@@ -36,12 +36,6 @@ Install the plugin with the command:
 - **python-performance-optimization/SKILL.md**: Strategies and techniques for optimizing Python code performance.
 - **uv-package-manager/SKILL.md**: Usage and best practices for the `uv` Python package manager.
 
-## Usage
-
-1. Browse to the relevant agent or skill directory.
-2. Read the Markdown documentation for detailed instructions, code examples, and recommendations.
-3. Integrate the provided patterns or guidance into your own Python projects.
-
 ## Contributing
 
 Contributions are welcome! To add a new agent or skill:
