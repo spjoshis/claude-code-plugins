@@ -203,6 +203,3 @@ To create a new plugin:
 3. Include relevant expert agents and skills following existing patterns.
 4. Update this README.md with your plugin details.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
