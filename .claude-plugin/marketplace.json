@@ -6,14 +6,14 @@
     "url": "https://github.com/spjoshis"
   },
   "metadata": {
-    "description": "A collection of Claude plugins for code documentation, debugging, development workflows, testing, AI/ML applications, infrastructure management, performance optimization, and code quality enhancement.",
-    "version": "1.0.0"
+    "description": "A comprehensive collection of Claude plugins for software development, project management, architecture, security, and documentation workflows across multiple languages and frameworks.",
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "python-development",
-      "source": "./plugins/python-development",
-      "description": "A Claude plugin to assist with Python development tasks including code generation, debugging, testing, and optimization.",
+      "name": "angular-development",
+      "source": "./plugins/angular-development",
+      "description": "Expert guidance for Angular web application development with TypeScript, including performance optimization, services, state management, and RxJS patterns.",
       "version": "1.0.0",
       "author": {
         "name": "Gopal Joshi",
@@ -22,15 +22,345 @@
       "homepage": "https://github.com/spjoshis/claude-code-plugins",
       "repository": "https://github.com/spjoshis/claude-code-plugins",
       "license": "MIT",
-      "keywords": [
-        "documentation",
-        "code-explanation",
-        "technical-writing",
-        "plugin",
-        "claude-code",
-        "marketplace"
+      "keywords": ["angular", "typescript", "frontend", "web-development", "ngrx", "rxjs"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/angular-performance",
+        "./skills/angular-services",
+        "./skills/ngrx-state",
+        "./skills/rxjs-patterns"
       ],
-      "category": "documentation",
+      "agents": ["./agents/angular-expert.md"]
+    },
+    {
+      "name": "business-analyst",
+      "source": "./plugins/business-analyst",
+      "description": "Business analysis and requirements engineering expertise for gathering, documenting, and managing business requirements and processes.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["business-analysis", "requirements", "process-modeling", "use-cases"],
+      "category": "management",
+      "strict": false,
+      "skills": [
+        "./skills/business-documentation",
+        "./skills/process-modeling",
+        "./skills/requirements-gathering",
+        "./skills/use-case-development"
+      ],
+      "agents": [
+        "./agents/business-analyst-expert.md",
+        "./agents/requirements-engineer.md"
+      ]
+    },
+    {
+      "name": "data-analyst",
+      "source": "./plugins/data-analyst",
+      "description": "Data analysis and business intelligence expertise for data visualization, statistical analysis, SQL, and Excel-based analytics.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["data-analysis", "business-intelligence", "sql", "visualization", "statistics"],
+      "category": "data",
+      "strict": false,
+      "skills": [
+        "./skills/data-visualization",
+        "./skills/excel-analysis",
+        "./skills/sql-analysis",
+        "./skills/statistical-analysis"
+      ],
+      "agents": [
+        "./agents/business-intelligence-expert.md",
+        "./agents/data-analyst-expert.md"
+      ]
+    },
+    {
+      "name": "devops-automation",
+      "source": "./plugins/devops-automation",
+      "description": "DevOps practices, CI/CD pipelines, containerization, Kubernetes orchestration, and infrastructure as code with Terraform.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["devops", "cicd", "docker", "kubernetes", "terraform", "infrastructure"],
+      "category": "infrastructure",
+      "strict": false,
+      "skills": [
+        "./skills/cicd-pipelines",
+        "./skills/docker-containers",
+        "./skills/kubernetes-orchestration",
+        "./skills/terraform-iac"
+      ],
+      "agents": ["./agents/devops-expert.md"]
+    },
+    {
+      "name": "dotnet-development",
+      "source": "./plugins/dotnet-development",
+      "description": ".NET and C# development expertise for enterprise applications, including ASP.NET Core, Blazor, Entity Framework, and design patterns.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["dotnet", "csharp", "aspnet-core", "blazor", "entity-framework"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/aspnet-core",
+        "./skills/blazor-development",
+        "./skills/csharp-patterns",
+        "./skills/entity-framework"
+      ],
+      "agents": ["./agents/dotnet-expert.md"]
+    },
+    {
+      "name": "elixir-development",
+      "source": "./plugins/elixir-development",
+      "description": "Elixir and Phoenix framework expertise for building scalable, fault-tolerant applications with OTP patterns and Ecto database integration.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["elixir", "phoenix", "otp", "ecto", "functional-programming"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/ecto-database",
+        "./skills/elixir-testing",
+        "./skills/otp-patterns",
+        "./skills/phoenix-framework"
+      ],
+      "agents": ["./agents/elixir-expert.md"]
+    },
+    {
+      "name": "flutter-development",
+      "source": "./plugins/flutter-development",
+      "description": "Cross-platform mobile development with Flutter and Dart, including BLoC pattern, animations, performance optimization, and state management.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["flutter", "dart", "mobile", "cross-platform", "bloc", "android", "ios"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/bloc-pattern",
+        "./skills/flutter-animations",
+        "./skills/flutter-performance",
+        "./skills/flutter-state-management"
+      ],
+      "agents": [
+        "./agents/dart-expert.md",
+        "./agents/flutter-expert.md"
+      ]
+    },
+    {
+      "name": "go-development",
+      "source": "./plugins/go-development",
+      "description": "Go language development for high-performance systems, including Gin framework, concurrency patterns, testing, and gRPC.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["go", "golang", "concurrency", "grpc", "backend"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/gin-framework",
+        "./skills/go-concurrency",
+        "./skills/go-testing",
+        "./skills/grpc-go"
+      ],
+      "agents": ["./agents/go-expert.md"]
+    },
+    {
+      "name": "java-development",
+      "source": "./plugins/java-development",
+      "description": "Java development expertise for enterprise applications, including Spring Boot, microservices, streams API, and Maven/Gradle build tools.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["java", "spring-boot", "microservices", "maven", "gradle"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/java-streams",
+        "./skills/maven-gradle",
+        "./skills/microservices-java",
+        "./skills/spring-boot"
+      ],
+      "agents": ["./agents/java-expert.md"]
+    },
+    {
+      "name": "kotlin-development",
+      "source": "./plugins/kotlin-development",
+      "description": "Kotlin development for Android and multiplatform applications, including coroutines, Ktor framework, and modern Android development.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["kotlin", "android", "multiplatform", "coroutines", "ktor"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/coroutines-kotlin",
+        "./skills/kotlin-android",
+        "./skills/kotlin-multiplatform",
+        "./skills/ktor-framework"
+      ],
+      "agents": ["./agents/kotlin-expert.md"]
+    },
+    {
+      "name": "nodejs-development",
+      "source": "./plugins/nodejs-development",
+      "description": "Node.js and TypeScript backend development with Express, NestJS patterns, performance optimization, and modern API development.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["nodejs", "typescript", "express", "nestjs", "backend", "api"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/express-api-development",
+        "./skills/nestjs-patterns",
+        "./skills/nodejs-performance",
+        "./skills/typescript-nodejs"
+      ],
+      "agents": ["./agents/nodejs-expert.md"]
+    },
+    {
+      "name": "php-development",
+      "source": "./plugins/php-development",
+      "description": "PHP development with modern frameworks including Laravel, Symfony, Composer package management, and testing practices.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["php", "laravel", "symfony", "composer", "backend"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/composer-packages",
+        "./skills/laravel-development",
+        "./skills/php-testing",
+        "./skills/symfony-framework"
+      ],
+      "agents": ["./agents/php-expert.md"]
+    },
+    {
+      "name": "product-owner-management",
+      "source": "./plugins/product-owner-management",
+      "description": "Product ownership and strategy expertise for backlog management, roadmapping, stakeholder communication, and user story writing.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["product-management", "agile", "backlog", "roadmap", "user-stories"],
+      "category": "management",
+      "strict": false,
+      "skills": [
+        "./skills/product-backlog-management",
+        "./skills/product-roadmapping",
+        "./skills/stakeholder-communication",
+        "./skills/user-story-writing"
+      ],
+      "agents": [
+        "./agents/product-owner-expert.md",
+        "./agents/product-strategy-expert.md"
+      ]
+    },
+    {
+      "name": "project-manager",
+      "source": "./plugins/project-manager",
+      "description": "Project management expertise for planning, reporting, risk management, and team coordination in agile and traditional methodologies.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["project-management", "agile", "planning", "risk-management"],
+      "category": "management",
+      "strict": false,
+      "skills": [
+        "./skills/project-planning",
+        "./skills/project-reporting",
+        "./skills/risk-management",
+        "./skills/team-coordination"
+      ],
+      "agents": [
+        "./agents/agile-pm-expert.md",
+        "./agents/project-manager-expert.md"
+      ]
+    },
+    {
+      "name": "python-development",
+      "source": "./plugins/python-development",
+      "description": "Python development expertise including FastAPI, async patterns, performance optimization, and modern package management with uv.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["python", "fastapi", "async", "performance", "backend"],
+      "category": "development",
       "strict": false,
       "skills": [
         "./skills/async-python-patterns",
@@ -41,6 +371,277 @@
         "./agents/fastapi-expert.md",
         "./agents/python-expert.md"
       ]
+    },
+    {
+      "name": "qa-engineer",
+      "source": "./plugins/qa-engineer",
+      "description": "Quality assurance and testing expertise for manual testing, test automation, performance testing, and comprehensive test planning.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["qa", "testing", "automation", "quality-assurance", "performance"],
+      "category": "quality",
+      "strict": false,
+      "skills": [
+        "./skills/manual-testing",
+        "./skills/performance-testing",
+        "./skills/test-automation",
+        "./skills/test-planning"
+      ],
+      "agents": [
+        "./agents/qa-engineer-expert.md",
+        "./agents/test-automation-expert.md"
+      ]
+    },
+    {
+      "name": "react-development",
+      "source": "./plugins/react-development",
+      "description": "React and Next.js frontend development expertise including hooks patterns, performance optimization, and state management solutions.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["react", "nextjs", "frontend", "hooks", "state-management"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/nextjs-development",
+        "./skills/react-hooks-patterns",
+        "./skills/react-performance",
+        "./skills/state-management-react"
+      ],
+      "agents": ["./agents/react-expert.md"]
+    },
+    {
+      "name": "ruby-development",
+      "source": "./plugins/ruby-development",
+      "description": "Ruby and Rails web development expertise including ActiveRecord, Rails patterns, RSpec testing, and Ruby gem development.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["ruby", "rails", "activerecord", "rspec", "backend"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/active-record",
+        "./skills/rails-patterns",
+        "./skills/rspec-testing",
+        "./skills/ruby-gems"
+      ],
+      "agents": ["./agents/ruby-expert.md"]
+    },
+    {
+      "name": "rust-development",
+      "source": "./plugins/rust-development",
+      "description": "Rust systems programming expertise for performance-critical applications, including async Rust, ownership patterns, and Cargo workspace management.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["rust", "systems-programming", "performance", "async", "cargo"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/async-rust",
+        "./skills/cargo-workspace",
+        "./skills/rust-ownership",
+        "./skills/rust-performance"
+      ],
+      "agents": ["./agents/rust-expert.md"]
+    },
+    {
+      "name": "scrum-master",
+      "source": "./plugins/scrum-master",
+      "description": "Scrum facilitation and agile coaching expertise for sprint planning, daily standups, retrospectives, and agile metrics tracking.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["scrum", "agile", "facilitation", "coaching", "sprint"],
+      "category": "management",
+      "strict": false,
+      "skills": [
+        "./skills/agile-metrics",
+        "./skills/daily-standups",
+        "./skills/retrospectives",
+        "./skills/sprint-planning"
+      ],
+      "agents": [
+        "./agents/agile-coach.md",
+        "./agents/scrum-master-expert.md"
+      ]
+    },
+    {
+      "name": "security-analyst",
+      "source": "./plugins/security-analyst",
+      "description": "Security assessment and compliance expertise for application security, threat modeling, security documentation, and compliance management.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["security", "appsec", "threat-modeling", "compliance"],
+      "category": "security",
+      "strict": false,
+      "skills": [
+        "./skills/compliance-management",
+        "./skills/security-assessment",
+        "./skills/security-documentation",
+        "./skills/threat-modeling"
+      ],
+      "agents": [
+        "./agents/appsec-expert.md",
+        "./agents/security-analyst-expert.md"
+      ]
+    },
+    {
+      "name": "solutions-architect",
+      "source": "./plugins/solutions-architect",
+      "description": "System architecture and design expertise for cloud architecture, scalability patterns, system design, and architecture documentation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["architecture", "cloud", "scalability", "system-design"],
+      "category": "architecture",
+      "strict": false,
+      "skills": [
+        "./skills/architecture-documentation",
+        "./skills/cloud-architecture",
+        "./skills/scalability-patterns",
+        "./skills/system-design"
+      ],
+      "agents": [
+        "./agents/cloud-architect-expert.md",
+        "./agents/solutions-architect-expert.md"
+      ]
+    },
+    {
+      "name": "swift-development",
+      "source": "./plugins/swift-development",
+      "description": "Swift and iOS application development expertise including SwiftUI, Combine framework, concurrency, and iOS architecture patterns.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["swift", "ios", "swiftui", "combine", "mobile"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/combine-framework",
+        "./skills/ios-architecture",
+        "./skills/swift-concurrency",
+        "./skills/swiftui-patterns"
+      ],
+      "agents": ["./agents/swift-expert.md"]
+    },
+    {
+      "name": "technical-writer",
+      "source": "./plugins/technical-writer",
+      "description": "Technical documentation and content strategy expertise for API documentation, docs-as-code, style guides, and user guide writing.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["documentation", "technical-writing", "api-docs", "style-guide"],
+      "category": "documentation",
+      "strict": false,
+      "skills": [
+        "./skills/api-documentation",
+        "./skills/docs-as-code",
+        "./skills/style-guide-development",
+        "./skills/user-guide-writing"
+      ],
+      "agents": [
+        "./agents/documentation-architect.md",
+        "./agents/technical-writer-expert.md"
+      ]
+    },
+    {
+      "name": "ux-designer",
+      "source": "./plugins/ux-designer",
+      "description": "User experience and interface design expertise for prototyping, usability testing, user research, and wireframing.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["ux", "ui", "design", "prototyping", "usability"],
+      "category": "design",
+      "strict": false,
+      "skills": [
+        "./skills/prototyping",
+        "./skills/usability-testing",
+        "./skills/user-research",
+        "./skills/wireframing"
+      ],
+      "agents": [
+        "./agents/ui-designer-expert.md",
+        "./agents/ux-designer-expert.md"
+      ]
+    },
+    {
+      "name": "vue-development",
+      "source": "./plugins/vue-development",
+      "description": "Vue.js and Nuxt.js frontend development expertise including Composition API, performance optimization, and Vuex/Pinia state management.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gopal Joshi",
+        "email": "gopal.joshi73@hotmail.com"
+      },
+      "homepage": "https://github.com/spjoshis/claude-code-plugins",
+      "repository": "https://github.com/spjoshis/claude-code-plugins",
+      "license": "MIT",
+      "keywords": ["vue", "nuxt", "frontend", "composition-api", "vuex", "pinia"],
+      "category": "development",
+      "strict": false,
+      "skills": [
+        "./skills/nuxt-development",
+        "./skills/vue-composition-api",
+        "./skills/vue-performance",
+        "./skills/vuex-pinia"
+      ],
+      "agents": ["./agents/vue-expert.md"]
     }
   ]
 }
