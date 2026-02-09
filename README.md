@@ -4,6 +4,7 @@
 
 This repository provides a comprehensive collection of plugins to enhance software development and project management workflows. It includes specialized plugins for various programming languages, frameworks, and professional roles, making it easy to extend Claude's capabilities with domain-specific expertise and best practices.
 
+
 ## Usage
 
 ### Add Marketplace
